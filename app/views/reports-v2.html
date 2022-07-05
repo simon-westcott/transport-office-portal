@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Driver & Vehicle Standards Agency Reporting</h1>
+
+  <p class="govuk-body-l">Introductory paragraph here.
+
+
+<p class="govuk-body">Additional paragraph or two here before before user chooses from options below.</p>
+
+  <form class="form" action="/show-report-answer" method="post">
+
+  {{ govukRadios({
+    idPrefix: "show-report",
+    name: "show-report",
+    fieldset: {
+      legend: {
+        text: "What do you want to do?",
+        isPageHeading: true,
+        classes: "govuk-fieldset__legend--l"
+      }
+    },
+    items: [
+      {
+        value: "ocrs-score",
+        text: "Operator Compliance Risk Score",
+        hint:
+        { text: "View your current risk score"
+      },
+        checked: checked("show-report", "ocrs-report")
+      },
+      {
+        divider: "or"
+      },
+      {
+        value: "ocrs-risk",
+        text: "Operator Compliance Risk Score (OCRS) detailed report",
+        hint:
+        { text: "Request a report that provides the detailed data used in calculating your current score"
+      },
+        checked: checked("show-report", "ocrs-risk")
+      },
+      {
+        value: "vth-report",
+        text: "Vehicle Test History (maintenance) reports",
+        hint:
+        { text: "Request details of all the test results for your vehicles by selecting the appropriate search criteria "
+      },
+        checked: checked("show-report", "vth-report")
+      },
+      {
+        value: "ve-report",
+        text: "Vehicle Encounter reports",
+        hint:
+        { text: "Request details of any vehicle encounter by selecting the appropriate search criteria "
+      },
+        checked: checked("show-report", "ve-report")
+      }
+    ]
+  }) }}
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+  </form>
+
+{% endblock %}

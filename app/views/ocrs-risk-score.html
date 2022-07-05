@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Operator Compliance Risk Score</h1>
+
+  <p class="govuk-body-l">Your current OCRS risk score.
+
+
+<p class="govuk-body">Additional paragraph or two here.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Help with your OCRS report
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Supporting information in here.</div>
+</details>
+
+
+<p class="govuk-body">Table here.</p>
+
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Print this page
+</button>
+{% endblock %}

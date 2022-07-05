@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Vehicle Test History (maintenance) reports</h1>
+
+  <p class="govuk-body-l">Introductory paragraph here.
+
+
+<p class="govuk-body">Additional paragraph or two here.</p>
+
+
+
+<p class="govuk-body">Select parameters here.</p>
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='confirmation-vth-report';">
+    Submit
+  </button>
+
+  <a class="govuk-link" href="/reports">Cancel</a>
+</div>
+
+{% endblock %}

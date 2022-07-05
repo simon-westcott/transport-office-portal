@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Request complete</h1>
+        <div class="govuk-panel__body">
+          You have successfully requested your detailed OCRS report. <br><strong></strong>
+        </div>
+      </div>
+<!--
+      <p>
+        We have sent you a confirmation email.
+      </p>
+-->
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>Your OCRS report will be emailed to <strong>name.something@something.org </strong>within the next 5 minutes.</p>
+      <p>If you do not recieve your OCRS report within 30 minutes, please check your spam folder or alternatively please contact the helpdesk on:  </p>
+      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p>
+
+<p class="govuk-body"><a href="/reports" class="govuk-link">Back to homepage</a>.</p>
+    </div>
+  </div>
+
+{% endblock %}

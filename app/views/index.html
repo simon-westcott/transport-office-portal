@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Transport Office Portal
+      <span class="govuk-caption-xl">{{releaseVersion}}</span>
+    </h1>{{releaseVersion | log }}
+    <p>
+      This prototype has been built to detail how the (xxx) service could look using the existing <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>.
+    </p>
+    <h2 class="govuk-heading-m">Intended audience</h2>
+    <p>
+      The service is intended for use by professional (office admin) public users.
+    </p>
+
+    <h2 class="govuk-heading-m">About this page</h2>
+
+    <p>This page allows you to jump to any page in the prototype to review layout and content.</p>
+
+    <h2 class="govuk-heading-m">Design gaps</h2>
+
+    <p class="govuk-body">Questions to be asked:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>where does continue go after a report is successfully generated</li>
+      <li>what happends when you click exit - is this the same as logout? is the a 2 step process?</li>
+      <li>are we going to have a breadcrumb in the design</li>
+      <li>where does My services link to</li>
+      <li>logout will need to be repositioned - agree placement</li>
+      <li>Header and Footer information (what needs to be there)t</li>
+    </ul>
+    <h2 class="govuk-heading-m">Examples</h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <a href="/reports">Homepage - Driver & Vehicle Standards Agency Reporting</a> - Version A
+      </li>
+      <li>
+        <a href="/reports-v2">Homepage - Driver & Vehicle Standards Agency Reporting</a> - Version B
+      </li>
+      <li>
+        <a href="/ocrs-risk-score">Operator compliance risk score</a>
+      </li>
+      <li>
+        <a href="/ocrs-risk-report">OCRS - detailed report</a>
+      </li>
+      <li>
+        <a href="/ocrs-risk-report-error">ORCS - detailed report - error</a>
+      </li>
+      <li>
+        <a href="confirmation-risk-report">OCRS - detailed report - success</a>
+      </li>
+      <li>
+        <a href="/vth-report">Vehicle test history (maintenance reports)</a>
+      </li>
+      <li>
+        <a href="/vth-report-error">Vehicle test history (maintenance reports) - error</a>
+      </li>
+      <li>
+        <a href="/confirmation-vth-report">Vehicle test history (maintenance reports) - success</a>
+      </li>
+      <li>
+        <a href="/ve-report">Encounter reports</a>
+      <li>
+        <a href="/ve-report-error">Encounter reports - error examples</a>
+      </li>
+      <li>
+        <a href="/confirmation-ve-report">Encounter reports - success page</a>
+      </li>
+      <li>
+        <a href="#">Service shutter pages</a>
+      </li>
+      <li>
+        <a href="#">Help</a>
+      </li>
+      <li>
+        <a href="#">Cookies</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Terms and conditions</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

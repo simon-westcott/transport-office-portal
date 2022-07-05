@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <p class="govuk-body-l">Should we have an introductory paragraph here? <br>Speak to content designer.</p>
+
+
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        How do you want to sign in?
+      </h1>
+    </legend>
+    <div id="sign-in-hint" class="govuk-hint">
+      hint text
+    </div>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="orcs-risk" aria-describedby="sign-in-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in">
+          View your current Operator Compliance Risk Score (OCRS)
+        </label>
+        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+          Introductory paragraph goes in here
+        </div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="orcs-report" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+          Request a detailed Operator Compliance Risk Score (OCRS) report
+        </label>
+        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          Introductory paragraph goes in here
+        </div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-3" name="sign-in" type="radio" value="vth-report" aria-describedby="sign-in-3-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-3">
+          Request a Vehicle Test History (maintenance) report
+        </label>
+        <div id="sign-in-3-item-hint" class="govuk-hint govuk-radios__hint">
+          Introductory paragraph goes in here
+        </div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-4" name="sign-in" type="radio" value="ve-report" aria-describedby="sign-in-4-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-4">
+          Request a Vehicle Encounter report
+        </label>
+        <div id="sign-in-4-item-hint" class="govuk-hint govuk-radios__hint">
+          Introductory paragraph goes in here
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+{{ govukErrorSummary({
+  titleText: "There is a problem",
+  errorList: [
+    {
+      text: "The date your passport was issued must be in the past",
+      href: "#passport-issued-day"
+    },
+    {
+      text: "Enter a postcode, like AA1 1AA",
+      href: "#postcode-input"
+    }
+  ]
+}) }}
+<h1 class="govuk-heading-xl">Vehicle Test History (maintenance) reports</h1>
+
+  <p class="govuk-body-l">Introductory paragraph here.
+
+
+<p class="govuk-body">Additional paragraph or two here.</p>
+
+
+
+<p class="govuk-body">Select parameters here.</p>
+
+{{ govukInput({
+  label: {
+    text: 'Full name'
+  },
+  id: "full-name-input",
+  name: "name",
+  autocomplete: "name",
+  errorMessage: {
+    text: "Enter your full name"
+  }
+}) }}
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
+    Submit
+  </button>
+
+  <a class="govuk-link" href="#">Cancel</a>
+</div>
+
+{% endblock %}
