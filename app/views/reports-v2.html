@@ -1,6 +1,12 @@
 {% extends "layout.html" %}
 
 {% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -17,7 +23,7 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Driver & Vehicle Standards Agency Reporting</h1>
+<h1 class="govuk-heading-l">Driver & Vehicle Standards Agency Reporting</h1>
 
   <p class="govuk-body-l">Introductory paragraph here.
 

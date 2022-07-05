@@ -1,23 +1,16 @@
 {% extends "layout.html" %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div>
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
 {% endblock %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Driver & Vehicle Standards Agency Reporting</h1>
+<h1 class="govuk-heading-l">Driver & Vehicle Standards Agency Reporting</h1>
 
   <p class="govuk-body-l">Introductory paragraph here.
 
@@ -33,7 +26,7 @@
       legend: {
         text: "What do you want to do?",
         isPageHeading: true,
-        classes: "govuk-fieldset__legend--l"
+        classes: "govuk-fieldset__legend--m"
       }
     },
     items: [

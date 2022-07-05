@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "beta"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-l">You're signed out</h1>
+
+
+
+              <p class="govuk-body">You're now signed out of your Driver & Vehicle Standards Agency service account.</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                <li><a href="#">Sign in to your Driver & Vehicle Standards Agency service account</a></li>
+                <li><a href="#">Explore GOV.UK</a></li>
+                <li><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</li>
+              </ul>
+
+
+{% endblock %}

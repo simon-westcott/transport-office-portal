@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-l">Sorry, the service is unavailable</h1>
+     <p class="govuk-body">
+       You will be able to use the service from 9am on Tuesday 19 July 2022.
+     </p>
+     <p class="govuk-body">
+     Contact the Driver & Vehicle Standards Agency Helpline if you have any questions.</p>
+       <h3 class="govuk-heading-s">Telephone</h3>
+       <p class="govuk-body">If you have a unique reference number, have it with you when you call.
+     </p>
+     <p class="govuk-body">
+     Telephone:<br>
+     <strong class="govuk-!-font-weight-bold">0808 157 3900</strong>
+     </p>
+     <p class="govuk-body">
+     Textphone:<br>
+     <strong class="govuk-!-font-weight-bold">0808 157 3909</strong>
+     </p>
+     <p class="govuk-body">
+     Outside UK:<br>
+     <strong class="govuk-!-font-weight-bold">+44 0808 157 0192</strong>
+     </p>
+     <p class="govuk-body">
+     Opening times:<br>
+     <strong class="govuk-!-font-weight-bold">Monday to Friday: 8am to 8pm</strong>
+     </p>
+     <p class="govuk-body">
+     Closed Easter Sunday, Christmas Day, Boxing Day and New Year’s Day.
+     </p>
+
+{% endblock %}

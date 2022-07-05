@@ -1,6 +1,12 @@
 {% extends "layout.html" %}
 
 {% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
   <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
 
@@ -18,7 +24,7 @@
     }
   ]
 }) }}
-<h1 class="govuk-heading-xl">Vehicle Encounter reports</h1>
+<h1 class="govuk-heading-l">Vehicle Encounter reports</h1>
 
   <p class="govuk-body-l">Introductory paragraph here.
 
