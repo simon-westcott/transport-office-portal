@@ -10,12 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="govuk-heading-l">Driver & Vehicle Standards Agency Reporting</h1>
-
-  <p class="govuk-body-l">Introductory paragraph here.
-
-
-<p class="govuk-body">Additional paragraph or two here before before user chooses from options below.</p>
+<span class="govuk-caption-l">Holdridge Road Haulage Services Ltd</span>
+<h1 class="govuk-heading-l">Driver & Vehicle Standards Agency reports</h1>
 
   <form class="form" action="/show-report-answer" method="post">
 
@@ -29,10 +25,13 @@
         classes: "govuk-fieldset__legend--m"
       }
     },
+  hint: {
+    text: ""
+  },
     items: [
       {
         value: "ocrs-score",
-        text: "View your current Operator Compliance Risk Score",
+        text: "View your current Operator Compliance Risk Score (OCRS)",
         hint:
         { text: ""
       },
@@ -43,7 +42,7 @@
       },
       {
         value: "ocrs-risk",
-        text: "Request a detailed Operator Compliance Risk Score (OCRS) report",
+        text: "Request a Operator Compliance Risk Score (OCRS) detailed report",
         hint:
         { text: ""
       },
