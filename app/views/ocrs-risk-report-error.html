@@ -1,4 +1,8 @@
 {% extends "layout.html" %}
+{% block pageTitle %}
+Operator Compliance Risk Score detailed report – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
 
 {% block beforeContent %}
 {{ govukPhaseBanner({
@@ -25,6 +29,8 @@
     </ul>
   </div>
 </div>
+
+
 <span class="govuk-caption-l">Holdridge Road Haulage Services Ltd</span>
 <h1 class="govuk-heading-l">OCRS detailed report</h1>
 
@@ -76,6 +82,7 @@
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Score date:</th>
       <td class="govuk-table__cell">
+        <div class="govuk-form-group govuk-form-group--error">
         <p id="passport-issued-error" class="govuk-error-message">
     <span class="govuk-visually-hidden">Error:</span> Your Score date must be in the past
   </p>

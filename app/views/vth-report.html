@@ -1,4 +1,8 @@
 {% extends "layout.html" %}
+{% block pageTitle %}
+Vehicle Test History (maintenance) reports – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
 
 {% block beforeContent %}
 {{ govukPhaseBanner({
@@ -14,21 +18,199 @@
 <span class="govuk-caption-l">Holdridge Road Haulage Services Ltd</span>
 <h1 class="govuk-heading-l">Vehicle Test History (maintenance) reports</h1>
 
-  <p class="govuk-body-l">Introductory paragraph here.
+  <p class="govuk-body-l">By filling out the details below, you can request your Vehicle Test History report.
+
+<p class="govuk-body">Note: you can choose to request a report using one of your Operator License numbers, or all of them.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Help with your Vehicle Test History reports
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Supporting information in here.</div>
+</details>
+<form action="/confirmation-vth-report" method="post" class="form">
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Request a Vehicle Test History (maintenance) report</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header govuk-!-width-one-half">All fields are required</th>
+      <th scope="col" class="govuk-table__header"></th>
+
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Choose your Operator License number:</th>
+      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
+          <option value="updated" selected>Please select</option>
+          <option value="OD0257202">OD 0257202</option>
+          <option value="OM1086785">OM 1086785</option>
+          <option value="PB1053759">PB 1053759</option>
+        </select>
+
+<p></p>
+
+  <div class="govuk-checkboxes__item govuk-checkboxes--small">
+    <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+    <label class="govuk-label govuk-checkboxes__label" for="organisation">
+      Select all your Operator License numbers
+    </label>
+  </div>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Start month:</th>
+      <td class="govuk-table__cell">
+        <div class="govuk-date-input" id="passport-issued">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+        </div>
+      </div>
+      </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">End month:</th>
+      <td class="govuk-table__cell">
+        <div class="govuk-date-input" id="passport-issued">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+        </div>
+      </div>
+      </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Vehicle type:</th>
+      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
+          <option value="updated" selected>Please select</option>
+          <option value="OD0257202">HGV</option>
+          <option value="OM1086785">Van</option>
+          <option value="PB1053759">Car</option>
+          <option value="PB1053759">Motorbike</option>
+        </select>
+          </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Report type:</th>
+      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
+          <option value="updated" selected>Please select</option>
+          <option value="OD0257202">Full</option>
+          <option value="OM1086785">?</option>
+          <option value="PB1053759">?</option>
+        </select>
+        </td>
+    </tr>
 
 
-<p class="govuk-body">Additional paragraph or two here.</p>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Report format:</th>
+      <td class="govuk-table__cell">
+
+        <div class="govuk-checkboxes__item govuk-checkboxes--small">
+        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+          PDF
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item govuk-checkboxes--small">
+      <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+      <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+        CSV
+      </label>
+    </div>
+
+
+      <div class="govuk-checkboxes__item govuk-checkboxes--small">
+        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+          XLS
+        </label>
+      </div>
+    </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Sort order:</th>
+      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
+          <option value="updated" selected>Please select</option>
+          <option value="OD0257202">Test date</option>
+          <option value="OM1086785">?</option>
+          <option value="PB1053759">?</option>
+        </select>
+        </td>
+    </tr>
 
 
 
-<p class="govuk-body">Select parameters here.</p>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Email address:</th>
+      <td class="govuk-table__cell">  <input class="govuk-input" id="ocrs-report-email" name="ocrs-report-email" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
+</td>
+
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Confirm email address:</th>
+      <td class="govuk-table__cell">  <input class="govuk-input" id="ocrs-confirm-report-email" name="ocrs-confirm-report-email" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
+</td>
+
+    </tr>
+  </tbody>
+</table>
 
 <div class="govuk-button-group">
-  <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='confirmation-vth-report';">
+  <button class="govuk-button" data-module="govuk-button">
     Submit
   </button>
 
-  <a class="govuk-link" href="/reports">Cancel</a>
+  <a class="govuk-link" href="#">Cancel</a>
 </div>
 
+</form>
 {% endblock %}
