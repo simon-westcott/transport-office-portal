@@ -21,4 +21,6 @@ module.exports = {
 
   // Insert values here
 
+  "ocrs-report-email": "jonathan.swift@hrhservicesltd.co.uk"
+
 }
