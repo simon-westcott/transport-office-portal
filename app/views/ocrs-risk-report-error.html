@@ -43,7 +43,7 @@
     Supporting information in here.</div>
 </details>
 
-
+<form action="/confirmation-risk-report" method="post" class="form">
 <table class="govuk-table">
   <caption class="govuk-table__caption govuk-table__caption--m">Request a OCRS detailed report</caption>
   <thead class="govuk-table__head">
@@ -143,28 +143,28 @@
         </label>
       </div></td>
 
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Email address:</th>
-      <td class="govuk-table__cell">  <input class="govuk-input" id="event-name" name="event-name" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
-</td>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Email address:</th>
+        <td class="govuk-table__cell">  <input class="govuk-input" id="ocrs-report-email" name="ocrs-report-email" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
+      </td>
 
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Confirm email address:</th>
-      <td class="govuk-table__cell">  <input class="govuk-input" id="event-name" name="event-name" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
-</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Confirm email address:</th>
+        <td class="govuk-table__cell">  <input class="govuk-input" id="ocrs-confirm-report-email" name="ocrs-confirm-report-email" type="text" value="jonathan.swift@hrhservicesltd.co.uk">
+      </td>
 
-    </tr>
-  </tbody>
-</table>
+      </tr>
+      </tbody>
+      </table>
 
-<div class="govuk-button-group">
-  <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='confirmation-risk-report';">
-    Submit
-  </button>
+      <div class="govuk-button-group">
+      <button class="govuk-button" data-module="govuk-button">
+      Submit
+      </button>
 
-  <a class="govuk-link" href="#">Cancel</a>
-</div>
+      <a class="govuk-link" href="#">Cancel</a>
+      </div>
 
-{% endblock %}
+      </form>
+      {% endblock %}
