@@ -13,31 +13,117 @@ Index – {{ serviceName }} – GOV.UK Prototype Kit
       <span class="govuk-caption-xl">{{releaseVersion}}</span>
     </h1>{{releaseVersion | log }}
     <p>
-      This prototype has been built to detail how the (xxx) service could look using the existing <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>.
+      This prototype has been built to detail how the Operator reports portal could look using the existing <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>.
     </p>
     <h2 class="govuk-heading-m">Intended audience</h2>
     <p>
       The service is intended for use by professional (office admin) public users.
     </p>
 
-    <h2 class="govuk-heading-m">About this page</h2>
+    <h2 class="govuk-heading-m">About this prototype</h2>
 
-    <p>This page allows you to jump to any page in the prototype to review proposed layout and content.</p>
+    <p>This prototype is for illustration only. It allows you to jump to any page in the prototype to review proposed layout and content.</p>
 
-    <h2 class="govuk-heading-m">Design gaps</h2>
-
-    <p class="govuk-body">Questions to be asked:</p>
+    <h2 class="govuk-heading-m">Design questions waiting on a response</h2>
     <ul class="govuk-list govuk-list--bullet">
-      <li>risk score labels - what do they mean? e.g. 01, 10 etc</li>
-      <li>where does continue go after a report is successfully generated?</li>
-      <li>what happends when you click exit - is this the same as logout? is the a 2 step process?</li>
-      <li>will there be a breadcrumb in the design?</li>
-      <li>selectable values for form selectors; Report type, Sort order and Vehicle type </li>
-      <li>where does My services link to?</li>
-      <li>do we need a Login page?</li>
-      <li>agree placement of Logout</li>
-      <li>what information is required for the Header and Footer?</li>
+      <li>clarify what risk score labels mean? e.g. 01, 10 etc <br> <strong class="govuk-tag govuk-tag--yellow">
+          DVSA to confirm
+        </strong></li>
+      <li>clarify selectable form values; Report type, Sort order and Vehicle type <br> <strong class="govuk-tag govuk-tag--yellow">
+            DVSA to confirm
+        </strong> </li>
+              <li>clarify what information is required for Footer: Contact us, Cookies and Terms and conditions<br><strong class="govuk-tag govuk-tag--yellow">
+                    DVSA to confirm
+                </strong> </li>
     </ul>
+
+
+
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Answered design questions
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+          <ul class="govuk-list govuk-list--bullet">
+
+            <li>what is the official name of the service?<br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>'Operator reports portal' can be used for now</strong> </li>
+
+            <li>(existing service) confirmation page, where does 'Return to My Services' go after a report is successfully generated?<br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Not required</strong>
+            </li>
+
+            <li>(existing service) confirmation page, where does continue go after a report is successfully generated?<br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Not required can use 'Back' button as proposed design</strong>
+            </li>
+
+            <li>(existing service) confirmation page, what happends when you click exit - is this the same as ?<br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Yes, this will be resolved by a new 'Signout' link in header</strong>
+            </li>
+
+            <li> is 'Signout' a 2 step process? <br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Yes, a confirmation page will be added so it's clear to users they are only loging out of the 'Operator reports portal'</strong>
+            </li>
+
+            <li>will there be a breadcrumb in the design? <br>
+            <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Not required</strong>
+          </li>
+
+            <li>where does My services link to? <br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Not required</strong>
+            </li>
+
+            <li>do we need a Login page? <br>
+              <strong class="govuk-tag">DVSA Reply</strong> 08/07/22<br> <strong>Not required</strong> handled via VOL
+            </li>
+          </ul>
+        </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          To do
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+      <ul class="govuk-list govuk-list--bullet">
+      <li>Add Signout to header<br>
+        <strong class="govuk-tag govuk-tag--blue">
+  Pending ATOS Designer
+</strong> 08/07/22<br><strong> Simon will check GDS guidance and also look at other services for correct placement and then add to design</strong></li>
+
+<li>Create example of 'Operator compliance risk score' showing paginaton><br>
+  <strong class="govuk-tag govuk-tag--blue">
+Pending ATOS Designer
+</strong> 08/07/22<br><strong> Simon to mock up page</strong></li>
+
+<li>Add Signout to header<br>
+  <strong class="govuk-tag govuk-tag--blue">
+Pending ATOS Designer
+</strong> 08/07/22<br> <strong>Simon to mock up Signout confirmation page</strong></li>
+
+    </ul>
+</div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     <h2 class="govuk-heading-m">Examples</h2>
 
     <ul class="govuk-list govuk-list--bullet">
@@ -47,11 +133,12 @@ Index – {{ serviceName }} – GOV.UK Prototype Kit
       <li>
         <a href="/reports-v2">Operator reports home - Driver & Vehicle Standards Agency </a> - Version B
       </li>
-      <li>
-        Operator reports home - Driver & Vehicle Standards Agency  - Version C
-      </li>
+    
       <li>
         <a href="/ocrs-risk-score">Operator compliance risk score</a>
+      </li>
+      <li>
+        Operator compliance risk score - with paginaton
       </li>
       <li>
         <a href="/ocrs-risk-report">OCRS - detailed report</a>
@@ -78,6 +165,9 @@ Index – {{ serviceName }} – GOV.UK Prototype Kit
       </li>
       <li>
         <a href="/confirmation-ve-report">Encounter reports - success page</a>
+      </li>
+      <li>
+        Signout confirmation
       </li>
       <li>
         <a href="/signout">Signout</a>
