@@ -1,0 +1,169 @@
+
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+.dvla-header {
+  background-color: #0b0c0c;
+  padding-top: 10px;
+}
+
+.dvla-header__container {
+  max-width: 960px;
+  margin: 0 15px;
+  position: relative;
+}
+
+@media (min-width: 40.0625em) {
+  .dvla-header__container {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .dvla-header__container {
+    margin: 0 auto;
+  }
+}
+
+.dvla-header__container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dvla-header__logo {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 40.0625em) {
+  .dvla-header__logo {
+    float: left;
+  }
+}
+
+.dvla-header__content {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 40.0625em) {
+  .dvla-header__content {
+    float: right;
+  }
+}
+
+.dvla-header__link {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.11111;
+  border-bottom: 1px solid transparent;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 25px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+@media print {
+  .dvla-header__link {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dvla-header__link {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .dvla-header__link {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.dvla-header__link:link, .dvla-header__link:visited, .dvla-header__link:hover, .dvla-header__link:active {
+  color: #ffffff;
+}
+
+.dvla-header__link:hover {
+  border-color: #ffffff;
+}
+
+.dvla-header__link:focus {
+  border-color: transparent;
+  color: #0b0c0c;
+}
+
+.dvla-header__navigation {
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.dvla-header__navigation-list {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dvla-header__navigation-item {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@media print {
+  .dvla-header__navigation-item {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dvla-header__navigation-item {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .dvla-header__navigation-item {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.dvla-header__navigation-item:last-child {
+  margin-right: 0;
+}
+
+.dvla-header__navigation-link:link, .dvla-header__navigation-link:visited, .dvla-header__navigation-link:active {
+  color: inherit;
+}
+
+.dvla-header__navigation-link:hover {
+  text-decoration: underline;
+}
+
+.dvla-header__navigation-link:focus {
+  color: #0b0c0c;
+}
+
+.dvla-header__navigation-link[aria-current=page] {
+  text-decoration: none;
+}
