@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Operator Compliance Risk Score – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-l">Holdridge Road Haulage Services Ltd</span>
+<h1 class="govuk-heading-l">Operator Compliance Risk Score</h1>
+
+<p class="govuk-body-l">Operator Compliance Risk Score (OCRS) is a mechanism used at roadside checks to calculate the likelihood of an operator being non-compliant.
+
+<p class="govuk-body">It is a risk based scoring system and is used as a guide only. It is NOT a mechanism for rating operators. Seperate scores are produced for Roadworthiness and Traffic categories.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Help with your Operator Compliance Risk score reports
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Supporting information in here.</div>
+</details>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Your current Operator Compliance Risk Scores</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Your operator licence</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">Road worthiness score</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">Overall traffic score</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--red">
+          example
+        </strong></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--orange">
+          example
+        </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+          example
+        </strong></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--red">
+          example
+        </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+          example
+        </strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+            example
+          </strong></td>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--red">
+          example
+        </strong></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--orange">
+          example
+        </strong></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+          example
+        </strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+            example
+          </strong></td>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">PB example</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--green">
+          example
+        </strong></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric"><strong class="govuk-tag govuk-tag--red">
+          example
+        </strong></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<nav class="app-pagination" role="navigation" aria-label="Pagination">
+  <ul class="app-pagination__list">
+    <li class="app-pagination__item app-pagination__item--previous">
+      <a href="/ocrs-risk-score-pag" class="govuk-link app-pagination__link" rel="prev">
+        <span class="app-pagination__link-title">
+          <svg class="app-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="app-pagination__link-text">
+            Previous
+          </span>
+        </span>
+        <span class="app-pagination__link-divider visually-hidden">:</span>
+        <span class="app-pagination__link-label">
+          Page 1 of 2
+        </span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+
+
+
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Print this page
+</button>
+{% endblock %}
