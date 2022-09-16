@@ -22,6 +22,7 @@ Vehicle Encounter reports – {{ serviceName }} – GOV.UK Prototype Kit
 
 <p class="govuk-body">Note: you can choose to request a report using one of your Operator License numbers, or all of them.</p>
 
+<!--
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
@@ -36,6 +37,7 @@ Vehicle Encounter reports – {{ serviceName }} – GOV.UK Prototype Kit
     </ul>
   </div>
 </details>
+-->
 <form action="/confirmation-ve-report" method="post" class="form">
 
 <table class="govuk-table">
@@ -129,57 +131,89 @@ Vehicle Encounter reports – {{ serviceName }} – GOV.UK Prototype Kit
       </td>
     </tr>
 
-
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Report type:</th>
-      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
-          <option value="updated" selected>Please select</option>
-          <option value="OD0257202">Full</option>
-          <option value="OM1086785">?</option>
-          <option value="PB1053759">?</option>
-        </select>
-        </td>
+      <td class="govuk-table__cell">
+        <form class="" action="index.html" method="post">
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Full
+            </label>
+          </div>
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Summary
+            </label>
+          </div>
+        </form>
+        <!--
+       <select class="govuk-select" id="sort" name="sort">
+        <option value="updated" selected>Please select</option>
+        <option value="OD0257202">Full</option>
+        <option value="OM1086785">?</option>
+        <option value="PB1053759">?</option>
+      </select>
+      -->
+      </td>
     </tr>
-
 
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Report format:</th>
       <td class="govuk-table__cell">
-
-        <div class="govuk-checkboxes__item govuk-checkboxes--small">
-        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
-          PDF
-        </label>
-      </div>
-
-      <div class="govuk-checkboxes__item govuk-checkboxes--small">
-      <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
-      <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
-        CSV
-      </label>
-    </div>
-
-
-      <div class="govuk-checkboxes__item govuk-checkboxes--small">
-        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
-          XLS
-        </label>
-      </div>
-    </td>
+        <form class="" action="index.html" method="post">
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              PDF
+            </label>
+          </div>
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              CSV
+            </label>
+          </div>
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              XLS
+            </label>
+          </div>
+        </form>
+      </td>
     </tr>
 
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Sort order:</th>
-      <td class="govuk-table__cell">  <select class="govuk-select" id="sort" name="sort">
+      <td class="govuk-table__cell">
+        <form class="" action="index.html" method="post">
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Test Date
+            </label>
+          </div>
+          <div class="govuk-radios__item govuk-radios--small">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Registration Number
+            </label>
+          </div>
+
+        </form>
+        <!--
+        <select class="govuk-select" id="sort" name="sort">
           <option value="updated" selected>Please select</option>
-          <option value="OD0257202">Date</option>
+          <option value="OD0257202">Test date</option>
           <option value="OM1086785">?</option>
           <option value="PB1053759">?</option>
         </select>
-        </td>
+        -->
+      </td>
     </tr>
+
 
 
 

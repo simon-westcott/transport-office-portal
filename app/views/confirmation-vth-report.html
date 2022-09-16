@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Confirmation - Vehicle Test History (maintenance) reports – {{ serviceName }} – GOV.UK Prototype Kit
+Confirmation - Vehicle Test History reports – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -21,7 +21,7 @@ Confirmation - Vehicle Test History (maintenance) reports – {{ serviceName }} 
       <div class="govuk-panel govuk-panel--confirmation">
         <h1 class="govuk-panel__title">Request complete</h1>
         <div class="govuk-panel__body">
-          You have successfully requested your Vehicle Test History maintenance report. <br><strong></strong>
+          You have successfully requested your Vehicle Test History report. <br><strong></strong>
         </div>
       </div>
 <!--
@@ -30,9 +30,17 @@ Confirmation - Vehicle Test History (maintenance) reports – {{ serviceName }} 
       </p>
 -->
       <h2 class="govuk-heading-m">What happens next</h2>
-      <p>Your Vehicle Test History maintenance report will be emailed to <strong>{{ data['ocrs-report-email'] }}</strong> within 2 working days.</p>
-      <p>If you do not recieve your Vehicle Test History maintenance report within 2 days, please check your spam folder or alternatively please contact the help desk.</p>
+      <p>Your Vehicle Test History report will be emailed to <strong>{{ data['ocrs-report-email'] }}</strong> within 2 working days.</p>
+      <p>If you do not recieve your Vehicle Test History report within 2 days, please check your spam folder or alternatively please contact the help desk.</p>
 <!--      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p> -->
+
+
+<h3 class="govuk-heading-s">Help desk email</h3>
+
+<ul class="govuk-list">
+  <li><a class="govuk-link" href="#">name@example.com</a></li>
+  <li>We aim to respond within 2 working days.</li>
+</ul>
 
 <p class="govuk-body"><a href="/reports" class="govuk-link">Back to Operator reports</a>.</p>
     </div>

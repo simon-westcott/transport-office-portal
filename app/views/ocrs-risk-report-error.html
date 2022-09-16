@@ -38,7 +38,7 @@ Operator Compliance Risk Score detailed report – {{ serviceName }} – GOV.UK 
 
 
 <p class="govuk-body">Note: you can choose to request a report using one of your Operator License numbers, or all of them.</p>
-
+<!--
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
@@ -53,7 +53,7 @@ Operator Compliance Risk Score detailed report – {{ serviceName }} – GOV.UK 
     </ul>
   </div>
 </details>
-
+-->
 <form action="/confirmation-risk-report" method="post" class="form">
 <table class="govuk-table">
   <caption class="govuk-table__caption govuk-table__caption--m">Request a OCRS detailed report</caption>
@@ -122,8 +122,9 @@ Operator Compliance Risk Score detailed report – {{ serviceName }} – GOV.UK 
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Positive events included:</th>
       <td class="govuk-table__cell">
+        <form class="" action="index.html" method="post">
       <div class="govuk-radios__item govuk-radios--small">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month" checked="checked">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
         <label class="govuk-label govuk-radios__label" for="changed-name">
           Yes
         </label>
@@ -134,26 +135,28 @@ Operator Compliance Risk Score detailed report – {{ serviceName }} – GOV.UK 
           No
         </label>
       </div>
+      </form>
       </td>
 
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Report format:</th>
       <td class="govuk-table__cell">
-
-        <div class="govuk-checkboxes__item govuk-checkboxes--small">
-        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD" checked="checked">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
-          PDF
-        </label>
-      </div>
-
-      <div class="govuk-checkboxes__item govuk-checkboxes--small">
-        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
-          XLS
-        </label>
-      </div></td>
+<form class="" action="index.html" method="post">
+        <div class="govuk-radios__item govuk-radios--small">
+          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+          <label class="govuk-label govuk-radios__label" for="changed-name">
+            PDF
+          </label>
+        </div>
+        <div class="govuk-radios__item govuk-radios--small">
+          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+          <label class="govuk-label govuk-radios__label" for="changed-name">
+            XLS
+          </label>
+        </div>
+        </form>
+      </td>
 
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">Report recipient email address:</th>
